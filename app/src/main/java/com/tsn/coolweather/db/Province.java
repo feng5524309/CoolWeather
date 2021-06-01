@@ -1,11 +1,10 @@
 package com.tsn.coolweather.db;
 
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
 
-@Entity
-public class Province {
-    @PrimaryKey(autoGenerate = true)
+import org.litepal.crud.DataSupport;
+
+public class Province extends DataSupport {
+
     private int id;
     private String provinceName;
     private int provinceCode;

@@ -37,12 +37,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    //用来和http通讯
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'org.litepal.android:core:1.5.1'
 
-    /**
-     * 数据库配置
-     */
-    def room_version = "2.2.0-alpha01"
-    implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
-    testImplementation "androidx.room:room-testing:$room_version"
 }
